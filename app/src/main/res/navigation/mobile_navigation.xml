@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_bloodpressure">
+
+    <fragment
+        android:id="@+id/nav_bloodpressure"
+        android:name="com.example.healthapp.ui.BloodPressure.BloodPressure"
+        android:label="BloodPressure"
+        tools:layout="@layout/blood_pressure_fragment" />
+
+    <fragment
+        android:id="@+id/nav_diabetic"
+        android:name="com.example.healthapp.ui.Diabetic.Diabetic"
+        android:label="Diabetic"
+        tools:layout="@layout/diabetic_fragment" />
+
+    <fragment
+        android:id="@+id/nav_heart"
+        android:name="com.example.healthapp.ui.Heart.Heart"
+        android:label="Heart"
+        tools:layout="@layout/heart_fragment" />
+
+    <fragment
+        android:id="@+id/nav_glucose"
+        android:name="com.example.healthapp.ui.Glucose.Glucose"
+        android:label="Glucose Random"
+        tools:layout="@layout/glucose_fragment" />
+
+    <fragment
+        android:id="@+id/nav_bloodCount"
+        android:name="com.example.healthapp.ui.CompleteBloodCount.CompleteBloodCount"
+        android:label="Glucose Random"
+        tools:layout="@layout/complete_blood_count_fragment" />
+</navigation>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item android:title="Enter Readings">
+            <item
+                android:id="@+id/nav_bloodpressure"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Blood Pressure" />
+            <item
+                android:id="@+id/nav_diabetic"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Diabetic" />
+            <item
+                android:id="@+id/nav_heart"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Heart" />
+            <item
+                android:id="@+id/nav_glucose"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Glucose Random" />
+            <item
+                android:id="@+id/nav_bloodCount"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Complete Blood Count" />
+        </item>
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

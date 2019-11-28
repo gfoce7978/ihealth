@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CompleteBloodCount.CompleteBloodCountForm">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="221dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Basophil" />
+
+        <EditText
+            android:id="@+id/Basophil"
+            android:layout_width="217dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="basophil"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Monocytes" />
+
+        <EditText
+            android:id="@+id/Monocytes"
+            android:layout_width="211dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Monocytes"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Eosinophils" />
+
+        <EditText
+            android:id="@+id/Eosinophils"
+            android:layout_width="215dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="eosinophils"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Neutrophils" />
+
+        <EditText
+            android:id="@+id/Hematocrit"
+            android:layout_width="145dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="hematocrit"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toEndOf="@+id/Haemoglobin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Lymghocytes"
+            android:layout_width="145dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="28dp"
+            android:ems="10"
+            android:hint="Lymghocytes"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WBC" />
+
+        <EditText
+            android:id="@+id/MCHC"
+            android:layout_width="146dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="MCHC"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/WBC"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RBC" />
+
+        <EditText
+            android:id="@+id/WBC"
+            android:layout_width="128dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="WBC"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MCH" />
+
+        <EditText
+            android:id="@+id/MCH"
+            android:layout_width="91dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="44dp"
+            android:ems="10"
+            android:hint="MCH"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Hematocrit" />
+
+        <EditText
+            android:id="@+id/RBC"
+            android:layout_width="96dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="RBC"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/MCV"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/MCV"
+            android:layout_width="82dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="MCV"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/MCH"
+            app:layout_constraintEnd_toStartOf="@+id/MCH"
+            app:layout_constraintHorizontal_bias="0.352"
+            app:layout_constraintStart_toEndOf="@+id/RBC" />
+
+        <EditText
+            android:id="@+id/Haemoglobin"
+            android:layout_width="164dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="haemoglobin"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Neutrophils"
+            android:layout_width="162dp"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="Neutrophils"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Lymghocytes"
+            app:layout_constraintEnd_toStartOf="@+id/Lymghocytes"
+            app:layout_constraintHorizontal_bias="0.277"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
